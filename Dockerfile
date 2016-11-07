@@ -132,7 +132,6 @@ RUN set -x \
 			--libdir="$TOMCAT_NATIVE_LIBDIR" \
 			--prefix="$CATALINA_HOME" \
 			--with-apr="$(which apr-1-config)" \
-			--with-java-home="/opt/jdk" \
 			--with-ssl=yes \
 		&& make -j$(getconf _NPROCESSORS_ONLN) \
 		&& make install \
